@@ -1,0 +1,42 @@
+@import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
+
+.primary-button {
+    background-color: rgb(240, 48, 67); // rgb(245, 45, 61);
+    color: #ffffff;
+    border: none;
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    i {
+        margin-right: 0.5rem;
+    }
+    &:hover {
+        background-color: rgb(233, 231, 231);
+        color: #111111;
+    }
+    &:active {
+        background-color: rgb(209, 209, 209);
+        color: #111111;
+    }
+}
+.link-button {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 0;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+        background-color: transparent;
+        color: #ffffff;
+    }
+    &:active {
+        background-color: transparent;
+        color: #ffffff;
+    }
+}

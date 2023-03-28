@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row py-3">
+        <div class="col">
+            <ns-sales
+                [data]="salesData.data" 
+                [xAxisLabel]="salesData.xAxisLabel" 
+                [yAxisLabel]="salesData.yAxisLabel" 
+                [title]="salesData.title"
+                [orientation]="salesData.orientation"
+                [height]="salesData.height">
+            </ns-sales>
+        </div>
+      </div>
+      <div class="row py-3">
+        <div class="col-6">
+            <ns-traffic
+                [data]="trafficData.data"
+                [title]="trafficData.title"
+                [height]="topItemsData.height">
+            </ns-traffic>
+        </div>
+        <div class="col-6">
+            <ns-top-items
+                [data]="topItemsData.data" 
+                [title]="topItemsData.title"
+                [height]="topItemsData.height">
+            </ns-top-items>
+        </div>
+      </div>
+      <div class="row py-3">
+        <div class="col">
+            <ns-revenue
+                [data]="revenueData.data"
+                [xAxisLabel]="revenueData.xAxisLabel" 
+                [yAxisLabel]="revenueData.yAxisLabel" 
+                [title]="revenueData.title"
+                [orientation]="revenueData.orientation"
+                [height]="revenueData.height">
+            </ns-revenue>
+        </div>
+      </div>
+</div>
+
+
+

@@ -1,0 +1,8 @@
+<ng-container [ngSwitch]="type">
+    <button *ngSwitchCase="'primary'" class="primary-button {{styleClass}}" (click)="clickEvent($event)">
+        <i *ngIf="icon" class="{{icon}}"></i>
+        {{text}}
+    </button>
+    <button *ngSwitchCase="'link'" class="link-button {{styleClass}}">{{text}}</button>
+</ng-container>
+

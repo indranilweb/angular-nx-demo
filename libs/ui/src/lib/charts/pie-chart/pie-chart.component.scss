@@ -1,0 +1,59 @@
+.pie-wrapper {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+
+  .pie-container {
+    position: relative;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+
+    .pie-slice {
+      border-radius: 100%;
+      height: 90%;
+      position: absolute;
+      aspect-ratio: 1;
+
+      .pie-text {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        z-index: 1;
+        font-size: 0.7rem;
+        font-weight: 600;
+        /* transform-origin: 50% 50%; */
+        align-items: center;
+        justify-content: center;
+        div {
+            margin-right: 80%;
+        }
+      }
+    }
+  }
+
+  .pie-legend {
+    width: 100px;
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      .color {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+      }
+      .label {
+        font-size: 0.7rem;
+        font-weight: 600;
+      }
+    }
+  }
+}

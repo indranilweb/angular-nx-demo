@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@neostore/data-access": ["libs/data-access/src/index.ts"],
+      "@neostore/features": ["libs/features/src/index.ts"],
+      "@neostore/ui": ["libs/ui/src/index.ts"],
+      "@ns-core/reports": ["libs/reports/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

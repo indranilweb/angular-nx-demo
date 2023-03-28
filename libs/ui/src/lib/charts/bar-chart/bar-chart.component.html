@@ -1,0 +1,49 @@
+<!-- <ngx-charts-bar-vertical 
+    [results]="data"
+    [scheme]="colorScheme"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    [showXAxisLabel]="true"
+    [showYAxisLabel]="true"
+    [xAxis]="true"
+    [yAxis]="true">
+</ngx-charts-bar-vertical> -->
+
+<div *ngIf="orientation === 'horizontal'" class="bar-horizontal">
+    <div class="plot-x-y" [ngStyle]="{'height': height}">
+        <div class="y-axis">
+            <span>{{yAxisLabel}}</span>
+        </div>
+        <div class="plot-x">
+            <dl>
+                <dd *ngFor="let d of data" title="{{d.value}}" class="percentage">
+                    
+                    <span class="text">{{d.name}}</span>
+                    <span class="bar" [ngStyle]="{'width': getCssPercentage(d.value)+'%'}">
+                        <span class="value">{{d.value}}</span>
+                    </span>
+                    
+                </dd>
+            </dl>
+            <div class="x-axis">{{xAxisLabel}}</div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="orientation === 'vertical'" class="bar-vertical">
+    <div class="plot-x-y" [ngStyle]="{'height': height}">
+        <div class="y-axis">
+            <span>{{yAxisLabel}}</span>
+        </div>
+        <div class="plot-x">
+            <dl>
+                <dd *ngFor="let d of data" title="{{d.value}}" class="percentage">
+                    <span class="value" [ngStyle]="{'height': getCssPercentage(d.value)+'%'}">{{d.value}}</span>
+                    <span class="bar" [ngStyle]="{'height': getCssPercentage(d.value)+'%'}"></span>
+                    <span class="text">{{d.name}}</span>
+                </dd>
+            </dl>
+            <div class="x-axis">{{xAxisLabel}}</div>
+        </div>
+    </div>
+</div>

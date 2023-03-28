@@ -1,0 +1,16 @@
+<div class="header {{styleClass}}">
+    <div class="title-wrapper">
+        <div class="logo" (click)="goToHome()">
+            <i class="bi-lightning-charge-fill"></i>
+            <div class="title">NEO STORE</div>
+        </div>
+        <div class="sub-title">
+            <ng-content></ng-content>
+        </div>
+    </div>
+    <div class="menu">
+        <ng-container *ngFor="let m of menu">
+            <a href="{{m.link}}">{{m.label}}</a>
+        </ng-container>
+    </div>
+</div>

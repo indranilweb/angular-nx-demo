@@ -1,0 +1,46 @@
+<!-- <ngx-charts-pie-chart 
+    [results]="data"
+    [view]="[500,400]"
+    [labels]="true" >
+</ngx-charts-pie-chart> -->
+
+
+<div class="pie-wrapper" [ngStyle]="{'height': height}">
+
+<div class="pie-container">
+    <!-- <div class="pie-slice" style="
+        
+        background: conic-gradient(blue 0deg 172deg, red 172deg 249deg, yellow 249deg 313deg, green 313deg 333deg, lightgreen 333deg 347deg, gold 347deg 355deg, pink 355deg 360deg
+            );
+    "></div> -->
+
+    <!-- [ngStyle]="{'background': getGradient(d)}" -->
+
+    <ng-container *ngFor="let d of dataFormat">
+       <div class="pie-slice" [ngStyle]="{'background': getGradient(d)}">
+            <div [ngStyle]="{'transform': getTextRotation(d)}" class="pie-text">
+                <div [ngStyle]="{'transform': getFlip(d)}">{{d.value}}</div>
+            </div>
+       </div>
+    </ng-container>
+    
+    <!-- <div style="position: absolute;
+transform: rotate(77deg);
+height: 100%;
+width: 100%;
+display: flex;
+z-index: 1;
+/* transform-origin: 50% 50%; */
+align-items: center;
+justify-content: center;">
+<div style="margin-right: auto;">TEST TEXT</div>
+</div> -->
+</div>
+
+    <div class="pie-legend">
+        <div *ngFor="let d of dataFormat" class="legend-item">
+            <div class="color" [ngStyle]="{'background': d.color}"></div>
+            <span class="label">{{d.name}}</span>
+        </div>
+    </div>
+</div>

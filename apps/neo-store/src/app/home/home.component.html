@@ -1,0 +1,20 @@
+<div class="hero position-relative d-flex justify-content-center align-items-center">
+    <div class="image w-100"></div>
+    <div class="position-absolute d-flex flex-column justify-content-center align-items-center buttons">
+        <div class="hero-text text-white">EPIC NEW COLLECTION</div>
+        <ns-button [text]="'CHECK THEM OUT'" [type]="'primary'" (click)="goToProducts()"></ns-button>
+        <ns-button [text]="'BROWSE ALL PRODUCTS'" [type]="'link'" class="all-products" (click)="goToProducts()"></ns-button>
+    </div>
+    <!-- <div class="backdrop"></div> -->
+    
+</div>
+<div class="container">
+    <div class="row">
+        <h1 class="trending d-flex justify-content-center pt-5 pb-4">TRENDING NOW</h1>
+    </div>
+    <div class="row">
+        <ng-container *ngFor="let i of products">
+            <ns-item [item]="i" class="col-6 p-3"></ns-item>
+        </ng-container>
+    </div>
+</div>

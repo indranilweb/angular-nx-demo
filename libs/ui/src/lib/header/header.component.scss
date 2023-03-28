@@ -1,0 +1,44 @@
+@import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
+// @import url("/node_modules/bootstrap/dist/css/bootstrap.min.css");
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    color: #ffffff;
+    background-color: #000000;
+    .title-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    .logo {
+        display: flex;
+        cursor: pointer;
+        color: #ffffff;
+        i {
+            padding-right: 1rem;
+            font-size: 2rem;
+        }
+    }
+    .title {
+        font-family: 'arial black';
+        font-size: 2rem;
+        font-weight: normal;
+    }
+    .sub-title {
+        font-weight: 400;
+        font-size: 1.25rem;
+        padding-left: 1rem;
+        margin-left: 1rem;
+        border-left: 1px solid #ffffff;
+    }
+    .menu {
+        display: flex;
+        a {
+            color: #ffffff !important;
+            text-decoration: none;
+            padding-left: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
+.item {
+    transition: all 0.25s;
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+  }
+  .ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+::ng-deep .add-to-cart-btn {
+  font-size: 16px !important;
+  padding: 0.5rem 1rem 0.5rem 1rem !important;
+}
