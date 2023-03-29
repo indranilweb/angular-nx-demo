@@ -6,11 +6,13 @@
 
 ## Development server
 
-Run `nx serve neo-store` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Run `npm run start:ns` for a store application dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+
+Run `npm run start:ad` for an admin application dev server. Navigate to http://localhost:8000/. The app will automatically reload if you change any of the source files.
 
 ## Understand this workspace
 
-Run `nx graph` to see a diagram of the dependencies of the projects.
+Run `npx nx graph` to see a diagram of the dependencies of the projects.
 
 ## Remote caching
 
