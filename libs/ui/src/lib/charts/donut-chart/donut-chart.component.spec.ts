@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { DonutChartComponent } from './donut-chart.component';
 
@@ -9,7 +8,7 @@ describe('DonutChartComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NgxChartsModule],
+      imports: [],
       declarations: [DonutChartComponent],
     }).compileComponents();
 

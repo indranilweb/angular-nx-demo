@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Item } from '@neostore/data-access';
 
 @Component({
-  selector: 'ns-item',
+  selector: 'ns-core-ns-item',
   templateUrl: './item.component.html',
   styleUrls: ['./item.component.scss'],
 })

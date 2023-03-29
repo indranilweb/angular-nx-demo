@@ -14,5 +14,7 @@ export const Primary = {
     data: [],
     xAxisLabel: '',
     yAxisLabel: '',
+    orientation: 'vertical',
+    height: '300px'
   },
 };
